@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.welcome .introduction {
+}
+
+.welcome {}
+
+.products {}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding-left: 200px !important;
+        padding-right: 200px !important;
+        padding-bottom: 200px !important;
+    }
+
+    .welcome .introduction {
+        max-width: 50%;
+    }
+  }
