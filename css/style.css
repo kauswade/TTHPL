@@ -37,8 +37,8 @@ h1, h5.connect {
 }
 
 main {
-    background-image: url("/images/patternBackground.png");
-    background-color: var(--color1);
+    background-image: url("images/patternBackground.png");
+    background-color: var(--color2);
 }
 
 .products {
