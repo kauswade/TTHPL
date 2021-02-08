@@ -1,21 +1,44 @@
+:root {
+    /* --color1: #1a535c;
+    --color2: #FB8500;
+    --color3: #219EBC;
+    --color4: white; */
+    --color1: #00296B;
+    --color2: #003F88;
+    --color3: #00509D;
+    --color4: #FDC500;
+    --color5: #FFD500;
+}
+
 h1, h5.connect {
     text-align: center;
 }
 
 .navbar {
-    background-color: #0B132B;
+    background-color: var(--color1);
+}
+
+.nav-item {
+    transition: 0.3s ease;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.nav-item:hover{
+    background-color: var(--color4);
 }
 
 #carousel {
     margin-top: 56px;
 }
 
-.welcome .introduction {}
-
-.welcome div {}
+.welcome .row p {
+    font-size: large;
+}
 
 main {
-    background-color: #1C2541;
+    background-image: url("/images/patternBackground.png");
+    background-color: var(--color1);
 }
 
 .products {
@@ -26,10 +49,15 @@ main {
     color: white;
 }
 
+.products .row .col .card {
+    min-height: 350px;
+}
+
 .viewLink {
     transition: 0.5s ease;
+    display: none;
     opacity: 0;
-    background-color: white;
+    background-color: var(--color4);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,8 +70,12 @@ main {
 }
 
 .product:hover .viewLink{
-    opacity: 0.7;
-    background-color: white;
+    opacity: 0.9;
+}
+
+.viewLink p {
+    font-size: xx-large;
+    color: white;
 }
 
 footer {
@@ -52,7 +84,26 @@ footer {
     color: #000000;
 }
 
-footer .card {}
+footer .container .row .col .card .card-body a {
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: black;
+}
+
+footer .container .row .col .card .card-body a:hover {
+    padding-left: 5px;
+}
+
+.social li a {
+    padding: 0 10px;
+    font-size: large;
+    transition: 0.3s ease;
+    color: black;
+}
+
+.social li a:hover {
+    color: var(--color4);
+}
 
 @media screen and (min-width: 1024px) {
     .welcome, main {
@@ -62,5 +113,11 @@ footer .card {}
 
     .welcome .introduction {
         max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand span {
+        display: none;
     }
 }
