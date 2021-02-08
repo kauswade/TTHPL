@@ -46,7 +46,8 @@ h1, h5.connect {
 
 /* -------------------- products -------------------- */
 main {
-    background-image: url("/images/patternBackground.png");
+    background-image: url("images/patternBackground.png");
+    /* background-image: url("https://cdn2.vectorstock.com/i/thumb-large/20/71/halftone-seamless-pattern-vector-8492071.jpg"); */
     background-color: var(--color1);
 }
 
